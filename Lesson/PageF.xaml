@@ -1,0 +1,117 @@
+﻿<Page x:Class="Lesson.PageF"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Lesson"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageF">
+
+    <Grid Background="white" InputScope="Default">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition Width="200*"></ColumnDefinition>
+            <ColumnDefinition Width="200*"></ColumnDefinition>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="200*"></RowDefinition>
+            <RowDefinition Height="200*"></RowDefinition>
+            <RowDefinition Height="80*"></RowDefinition>
+            <RowDefinition Height="80*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBox Text="Введите для поиска" Grid.ColumnSpan="2"
+                 FontFamily="Segoe Print" FontSize="20" 
+                 VerticalContentAlignment="Center" Margin="18,30,19,30"></TextBox>
+
+
+        <ComboBox Text="Сортировка" Foreground="Black"
+                  Grid.Column="2" Width="150" Height="40" Cursor="" Uid="frfr"
+                  FontFamily="Segoe Print" FontSize="16" FontWeight="Medium" VerticalAlignment="Center" HorizontalAlignment="Center" IsEditable="True" IsSynchronizedWithCurrentItem="False" IsReadOnly="True">
+            <ComboBoxItem>Категория 1</ComboBoxItem>
+            <ComboBoxItem>Категория 2</ComboBoxItem>
+            <ComboBoxItem>Категория 3</ComboBoxItem>
+        </ComboBox>
+
+        <ComboBox Text="Фильтрация" Foreground="Black" IsEditable="True"
+                  Grid.Column="3" Width="150" Height="40" Cursor="" Uid="frfr"
+                  FontFamily="Segoe Print" FontSize="16" FontWeight="Medium" VerticalAlignment="Center" HorizontalAlignment="Center" IsSynchronizedWithCurrentItem="False" IsReadOnly="True">
+            <ComboBoxItem>Сначала больше</ComboBoxItem>
+            <ComboBoxItem>Санчала меньше</ComboBoxItem>
+            <ComboBoxItem>Новые</ComboBoxItem>
+        </ComboBox>
+
+        <GroupBox Background="White" Grid.ColumnSpan="4" Margin="10" VerticalAlignment="Center" Padding="10" Grid.Row="1" BorderBrush="Black">
+            <Image Source="Resources/image.jpg" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+        </GroupBox>
+        <TextBlock Text="Тип материала | Наименование материала"
+                   Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1"
+                   Padding="10, 0, 0, 0"
+                   FontFamily="Segoe Print" FontSize="16"
+                   VerticalAlignment="Top" Margin="0,22,0,0"></TextBlock>
+
+        <TextBlock Text="Минимальное количество: 3шт" Padding="10, 0, 0, 0"
+                   Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1"
+                   FontFamily="Segoe Print" FontSize="16"
+                   VerticalAlignment="Top" Margin="0,50,0,0"
+                   ></TextBlock>
+
+        <TextBlock Text="Поставщики:" Padding="10, 0, 0, 0"
+                   Grid.Column="1" Grid.ColumnSpan="1" Grid.Row="1"
+                   FontFamily="Segoe Print" FontSize="16"
+                   VerticalAlignment="Top" Margin="0,78,0,0" FontWeight="Bold" HorizontalAlignment="Left" Width="129"
+                   ></TextBlock>
+
+        <TextBlock Text="Рога и копыта, Копыта и рога" Padding="10, 0, 0, 0"
+                   Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="1"
+                   FontFamily="Segoe Print" FontSize="16"
+                   VerticalAlignment="Top" Margin="134,78,167,0"
+                   ></TextBlock>
+
+        <TextBlock Text="Остаток: 0шт"  FontFamily="Segoe Print" FontSize="16"
+                   Grid.Row="1" Grid.Column="3" Padding="0, 20, 20, 0" TextAlignment="Right"
+                   ></TextBlock>
+
+
+        <GroupBox Background="White" Grid.ColumnSpan="4" Margin="10" VerticalAlignment="Center" Padding="10" Grid.Row="2" BorderBrush="Black">
+            <Image Source="Resources/image.jpg" HorizontalAlignment="Left" VerticalAlignment="Center"></Image>
+        </GroupBox>
+        <TextBlock Text="Тип материала | Наименование материала"
+                   Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="2"
+                   Padding="10, 0, 0, 0"
+                   FontFamily="Segoe Print" FontSize="16"
+                   VerticalAlignment="Top" Margin="0,22,0,0"></TextBlock>
+
+        <TextBlock Text="Минимальное количество: 3шт" Padding="10, 0, 0, 0"
+                   Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="2"
+                   FontFamily="Segoe Print" FontSize="16"
+                   VerticalAlignment="Top" Margin="0,50,0,0"
+                   ></TextBlock>
+
+        <TextBlock Text="Поставщики:" Padding="10, 0, 0, 0"
+                   Grid.Column="1" Grid.ColumnSpan="1" Grid.Row="2"
+                   FontFamily="Segoe Print" FontSize="16"
+                   VerticalAlignment="Top" Margin="0,78,0,0" FontWeight="Bold" HorizontalAlignment="Left" Width="129"
+                   ></TextBlock>
+
+        <TextBlock Text="Рога и копыта, Копыта и рога" Padding="10, 0, 0, 0"
+                   Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="2"
+                   FontFamily="Segoe Print" FontSize="16"
+                   VerticalAlignment="Top" Margin="134,78,167,0"
+                   ></TextBlock>
+
+        <TextBlock Text="Остаток: 0шт"  FontFamily="Segoe Print" FontSize="16"
+                   Grid.Row="2" Grid.Column="3" Padding="0, 20, 20, 0" TextAlignment="Right"
+                   ></TextBlock>
+
+
+        <TextBlock Text="&lt; 1 2 3 4 &gt;"
+                   Grid.Row="3" Grid.Column="3" TextAlignment="Right" VerticalAlignment="Bottom" Padding="10"></TextBlock>
+
+        <Button Content="Назад" Background="#EAB14D"
+                Grid.Row="3" Width="150" Height="50" Click="Button_Click_Back"></Button>
+        <Frame Name="pageSearch" Grid.ColumnSpan="4" Grid.RowSpan="4" NavigationUIVisibility="Hidden" Panel.ZIndex="8"></Frame>
+    </Grid>
+</Page>
